@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_500">#FF5722</color>
+    <color name="blue_700">#E64A19</color>
+    <color name="yellow">#FFF176</color>
+    <color name="black">#000000</color>
+
+    <color name="game_bg">#0F172A</color>
+    <color name="button_color">#0CEB5E</color>
+    <color name="text_white">#FFFFFF</color>
+</resources>

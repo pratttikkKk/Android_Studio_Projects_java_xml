@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="3"
+    android:columnCount="2"
+    android:padding="20dp">
+
+    <TextView
+        android:text="Grid Page"
+        android:textSize="22sp"
+        android:layout_columnSpan="2"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:text="Button 1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Button 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Button 3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Button 4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</GridLayout>

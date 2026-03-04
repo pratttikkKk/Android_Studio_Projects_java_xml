@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Radio Buttons -->
+        <TextView
+            android:text="Select Gender"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:text="Female"/>
+        </RadioGroup>
+
+        <!-- CheckBox -->
+        <TextView
+            android:text="Select Hobbies"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbSports"
+            android:text="Sports"/>
+
+        <CheckBox
+            android:id="@+id/cbMusic"
+            android:text="Music"/>
+
+        <!-- Toggle Button -->
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_marginTop="10dp"
+            android:textOn="Notifications ON"
+            android:textOff="Notifications OFF"/>
+
+        <!-- Spinner -->
+        <TextView
+            android:text="Select Course"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Rating Bar -->
+        <TextView
+            android:text="Give Rating"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" android:layout_height=""/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:numStars="5"
+            android:stepSize="1"/>
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Image Button -->
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
