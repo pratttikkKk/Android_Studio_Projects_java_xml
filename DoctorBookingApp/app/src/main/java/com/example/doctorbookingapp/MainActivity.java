@@ -19,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.adminBtn).setOnClickListener(v ->
                 startActivity(new Intent(this, AdminLoginActivity.class)));
+        findViewById(R.id.dashboardBtn).setOnClickListener(v ->
+                startActivity(new Intent(this, UserDashboardActivity.class)));
     }
 }

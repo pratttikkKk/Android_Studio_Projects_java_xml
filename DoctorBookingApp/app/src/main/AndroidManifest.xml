@@ -36,7 +36,7 @@
         <activity android:name=".AdminLoginActivity" />
         <activity android:name=".AdminDoctorActivity" />
         <activity android:name=".AdminBookingsActivity" />
-
+        <activity android:name=".UserDashboardActivity"/>
     </application>
 
 </manifest>
