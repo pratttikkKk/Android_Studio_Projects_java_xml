@@ -1,22 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.doctorbookingapp">
 
     <application
         android:allowBackup="true"
-        android:label="Doctor Booking"
-        android:theme="@style/Theme.DoctorBookingApp">
+        android:label="Doctor Booking App"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".SplashActivity"/>
-        <activity android:name=".BookingActivity"/>
-        <activity android:name=".ViewActivity"/>
-        <activity android:name=".AdminLoginActivity"/>
+        <!-- LAUNCHER ACTIVITY -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
 
-        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
 
+        <!-- LOGIN -->
+        <activity android:name=".LoginActivity" />
+
+        <!-- HOME -->
+        <activity android:name=".MainActivity" />
+
+        <!-- USER SIDE -->
+        <activity android:name=".DoctorListActivity" />
+        <activity android:name=".BookingActivity" />
+
+        <!-- ADMIN SIDE -->
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".AdminDoctorActivity" />
+        <activity android:name=".AdminBookingsActivity" />
+
     </application>
+
 </manifest>

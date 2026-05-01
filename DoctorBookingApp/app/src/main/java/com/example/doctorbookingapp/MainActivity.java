@@ -9,13 +9,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.userBtn).setScaleX(0f);
+        findViewById(R.id.userBtn).animate().scaleX(1f).setDuration(500);
 
-        findViewById(R.id.btnBook).setOnClickListener(v ->
-                startActivity(new Intent(this, BookingActivity.class)));
+        findViewById(R.id.adminBtn).setScaleX(0f);
+        findViewById(R.id.adminBtn).animate().scaleX(1f).setDuration(700);
+        findViewById(R.id.userBtn).setOnClickListener(v ->
+                startActivity(new Intent(this, DoctorListActivity.class)));
 
-        findViewById(R.id.btnAdmin).setOnClickListener(v ->
+        findViewById(R.id.adminBtn).setOnClickListener(v ->
                 startActivity(new Intent(this, AdminLoginActivity.class)));
-        findViewById(R.id.btnBook).setAlpha(0f);
-        findViewById(R.id.btnBook).animate().alpha(1f).setDuration(800);
     }
 }

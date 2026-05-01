@@ -1,4 +1,4 @@
-package com.example.doctorbookingapp;
+package com.example.doctorbookingapp.models;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -12,7 +12,7 @@ public class Booking {
     public String name;
     public String doctor;
     public String datetime;
-    public String status; // Pending / Accepted / Rejected
+    public String status;
 
     public Booking(String name, String doctor, String datetime, String status) {
         this.name = name;
