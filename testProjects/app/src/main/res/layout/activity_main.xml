@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -7,47 +8,28 @@
     android:padding="20dp">
 
     <TextView
-        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Student Registration"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
         android:textSize="25sp"
-        android:textStyle="bold"/>
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Name"
-        android:layout_below="@id/textTitle"
-        android:layout_marginTop="20dp"/>
-
-    <EditText
-        android:id="@+id/Mobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Mobile Number"
-        android:inputType="phone"
-        android:layout_below="@id/name"
-        android:layout_marginTop="10dp"/>
-
-    <Button
-        android:id="@+id/button1"
+        android:textStyle="bold"
+        android:layout_x="40dp"
+        android:layout_y="50dp"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_below="@id/Mobile"
-        android:layout_marginTop="20dp"/>
+        android:text="click button"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_x="50dp"
+        android:layout_y="100dp"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:layout_below="@id/Mobile"
-        android:layout_toRightOf="@id/button1"
-        android:layout_marginTop="20dp"/>
+        android:layout_x="50dp"
+        android:layout_y="120dp" />
 
-</RelativeLayout>
+</AbsoluteLayout>
