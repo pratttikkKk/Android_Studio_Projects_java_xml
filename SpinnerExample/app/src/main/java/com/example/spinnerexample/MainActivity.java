@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-String cities[]={"mumbai","pune","nagpur","nagpur","bai","delhi","goa","kolkata"};
+String cities[]={"mumbai","pune","nagpur","delhi","goa","kolkata"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ String cities[]={"mumbai","pune","nagpur","nagpur","bai","delhi","goa","kolkata"
                 Toast.makeText(getApplicationContext(), cities[position], Toast.LENGTH_SHORT).show();
             }
             @Override
-                    public void onNothingSelected(AdapterView<?> parent) {
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
             });
