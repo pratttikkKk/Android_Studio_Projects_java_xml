@@ -15,18 +15,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        b = findViewById(R.id.button1);
-
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(MainActivity.this,
-                        "Submitted",
-                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
     }
 }

@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:stretchColumns="1">
+    android:background="#D3D3D3">
 
-    <TableRow>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Frame Layout"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
 
-        <TextView
-            android:text="Name : "
-            android:textSize="18sp"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"/>
 
-        <EditText
-            android:id="@+id/name"
-            android:hint="Enter Name"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:text="Mobile : "
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/mobile"
-            android:hint="Enter Mobile"
-            android:inputType="phone"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:text="Email : "
-            android:textSize="18sp"/>
-
-        <EditText
-            android:id="@+id/email"
-            android:hint="Enter Email"
-            android:inputType="textEmailAddress"/>
-
-    </TableRow>
-
-    <TableRow>
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_span="2"
-            android:text="Submit"/>
-
-    </TableRow>
-
-</TableLayout>
+</FrameLayout>
